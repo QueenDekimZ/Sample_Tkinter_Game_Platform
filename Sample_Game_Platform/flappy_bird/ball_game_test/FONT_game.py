@@ -18,7 +18,7 @@ def main():
     screen = pygame.display.set_mode(bg_size, pygame.RESIZABLE)
 
     pygame.display.set_caption("Python动态文字")   #窗口标题
-    icon = pygame.image.load('../image/PYG03-flower.png')
+    icon = pygame.image.load('../../dog2.png')
 
     f1 = pygame.freetype.Font("C://Windows//Fonts//msyh.ttc", 36)
     f1rect = f1.render_to(screen, pos, "世界和平", fgcolor=pygame.Color("black"), size=50)
@@ -55,7 +55,7 @@ def main():
         screen.fill(bg_color)  #填充屏幕背景色
         if pygame.display.get_active():
             f1rect = f1.render_to(screen, pos, "世界和平", fgcolor=pygame.Color("black"), size=50)
-S
+
         pygame.display.update()  # 刷新屏幕，变化的部分
         #screen.blit(f1surf, (pos[0], pos[1]))
         fclock.tick(fps)   #控制帧速度，即窗口刷新速度，每秒最大framerate次帧刷新

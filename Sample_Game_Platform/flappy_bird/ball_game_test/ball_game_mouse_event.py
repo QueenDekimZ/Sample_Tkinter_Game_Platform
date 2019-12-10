@@ -20,13 +20,15 @@ def main():
     #pygame.NOFRAME 窗口没有边界显示    #增加退出方式
     #pygame.FULLSCREEN 窗口全屏显示    #分辨率对应问题
 
-    pygame.display.set_caption("Python壁球")   #窗口标题
+    pygame.display.set_caption("DogB Ball")   #窗口标题
     # display.set_caption(title,icontitle=None)
     # display.get_caption() 反回元组(title,icontitle) 该函数与游戏交互逻辑配合，可以根据游戏情节修改标题内容
     # display.set_icon(surface) 设置窗口的图标效果 图标是一个Surface对象
 
-    ball = pygame.image.load('../image/PYG02-ball.gif')
-    icon = pygame.image.load('../image/PYG03-flower.png')
+    # ball = pygame.image.load('../image/PYG02-ball.gif')
+    # icon = pygame.image.load('../image/PYG03-flower.png')
+    ball = pygame.image.load('dog2.png')
+    icon = pygame.image.load('dog2.png')
 
     pygame.display.set_icon(icon)
     ballrect = ball.get_rect()
@@ -37,7 +39,8 @@ def main():
     while True:      #游戏主循环
         for event in pygame.event.get():  #监视键盘和鼠标事件
             if event.type == pygame.QUIT:  #关闭窗口的事件
-                sys.exit()  #退出程序
+                pygame.quit()  #退出程序
+                return
             elif event.type == pygame.KEYDOWN: #键盘敲击事件 K_UP or K_DOWN or K_LEFT or K_RIGHT
                 if event.key == pygame.K_LEFT:
                     speed[0] = speed[0] if speed[0] == 0 else (abs(speed[0]) - 1)*int(speed[0]/abs(speed[0]))
@@ -48,7 +51,8 @@ def main():
                 elif event.key == pygame.K_UP:
                     speed[1] = speed[1] + 1 if speed[1] > 0 else speed[1] - 1
                 elif event.key == pygame.K_ESCAPE:
-                    sys.exit()
+                    pygame.quit()
+                    return
 
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:
@@ -88,6 +92,5 @@ def main():
         pygame.display.update()  #刷新屏幕，变化的部分
         #pygame.display.flip()  刷新整个窗口
         fclock.tick(fps)   #控制帧速度，即窗口刷新速度，每秒最大framerate次帧刷新
-if __name__ == '__main__':
-    main()
+
 

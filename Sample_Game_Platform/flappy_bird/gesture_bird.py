@@ -41,44 +41,44 @@ GAMEOVER = 2
 # # 设置游戏对话框尺寸
 # SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 # # 取背景图，抠掉边缘转换
-# background_day = pygame.image.load('../flappy_bird/flappybird/banana2.png').convert_alpha()
-# bird = [pygame.image.load('../flappy_bird/assets/sprites/redbird-upflap.png').convert_alpha(),
-#         pygame.image.load('../flappy_bird/assets/sprites/redbird-midflap.png').convert_alpha(),
-#         pygame.image.load('../flappy_bird/assets/sprites/redbird-downflap.png').convert_alpha()]
+# background_day = pygame.image.load('flappy_bird/flappybird/banana2.png').convert_alpha()
+# bird = [pygame.image.load('flappy_bird/assets/sprites/redbird-upflap.png').convert_alpha(),
+#         pygame.image.load('flappy_bird/assets/sprites/redbird-midflap.png').convert_alpha(),
+#         pygame.image.load('flappy_bird/assets/sprites/redbird-downflap.png').convert_alpha()]
 #
-# number = [pygame.image.load('../flappy_bird/assets/sprites/0.png').convert_alpha(),
-#           pygame.image.load('../flappy_bird/assets/sprites/1.png').convert_alpha(),
-#           pygame.image.load('../flappy_bird/assets/sprites/2.png').convert_alpha(),
-#           pygame.image.load('../flappy_bird/assets/sprites/3.png').convert_alpha(),
-#           pygame.image.load('../flappy_bird/assets/sprites/4.png').convert_alpha(),
-#           pygame.image.load('../flappy_bird/assets/sprites/5.png').convert_alpha(),
-#           pygame.image.load('../flappy_bird/assets/sprites/6.png').convert_alpha(),
+# number = [pygame.image.load('flappy_bird/assets/sprites/0.png').convert_alpha(),
+#           pygame.image.load('flappy_bird/assets/sprites/1.png').convert_alpha(),
+#           pygame.image.load('flappy_bird/assets/sprites/2.png').convert_alpha(),
+#           pygame.image.load('flappy_bird/assets/sprites/3.png').convert_alpha(),
+#           pygame.image.load('flappy_bird/assets/sprites/4.png').convert_alpha(),
+#           pygame.image.load('flappy_bird/assets/sprites/5.png').convert_alpha(),
+#           pygame.image.load('flappy_bird/assets/sprites/6.png').convert_alpha(),
 #
-#           pygame.image.load('../flappy_bird/assets/sprites/7.png').convert_alpha(),
-#           pygame.image.load('../flappy_bird/assets/sprites/8.png').convert_alpha(),
-#           pygame.image.load('../flappy_bird/assets/sprites/9.png').convert_alpha()]
+#           pygame.image.load('flappy_bird/assets/sprites/7.png').convert_alpha(),
+#           pygame.image.load('flappy_bird/assets/sprites/8.png').convert_alpha(),
+#           pygame.image.load('flappy_bird/assets/sprites/9.png').convert_alpha()]
 # # 地面图
-# ground = pygame.image.load('../flappy_bird/assets/sprites/base.png').convert_alpha()
+# ground = pygame.image.load('flappy_bird/assets/sprites/base.png').convert_alpha()
 # # 开场动画
-# message = pygame.image.load('../flappy_bird/flappybird/text_ready.png').convert_alpha()
+# message = pygame.image.load('flappy_bird/flappybird/text_ready.png').convert_alpha()
 # # 取柱子
-# pipe_down = pygame.image.load('../flappy_bird/flappybird/pipe_up.png').convert_alpha()
-# pipe_up = pygame.image.load('../flappy_bird/flappybird/pipe_down.png').convert_alpha()
+# pipe_down = pygame.image.load('flappy_bird/flappybird/pipe_up.png').convert_alpha()
+# pipe_up = pygame.image.load('flappy_bird/flappybird/pipe_down.png').convert_alpha()
 # # 取logo
-# logo = pygame.image.load('../flappy_bird/flappybird/bird0_0.png').convert_alpha()
+# logo = pygame.image.load('flappy_bird/flappybird/bird0_0.png').convert_alpha()
 # # 取声音
 # if "win" in sys.platform:
 #     soundExt = '.wav'
 # else:
 #     soundExt = 'ogg'
 #
-# sound_wing = pygame.mixer.Sound('../flappy_bird/assets/audio/wing' + soundExt)
-# sound_hit = pygame.mixer.Sound('../flappy_bird/assets/audio/hit' + soundExt)
-# sound_point = pygame.mixer.Sound('../flappy_bird/assets/audio/point' + soundExt)
-# sound_die = pygame.mixer.Sound('../flappy_bird/assets/audio/die' + soundExt)
+# sound_wing = pygame.mixer.Sound('flappy_bird/assets/audio/wing' + soundExt)
+# sound_hit = pygame.mixer.Sound('flappy_bird/assets/audio/hit' + soundExt)
+# sound_point = pygame.mixer.Sound('flappy_bird/assets/audio/point' + soundExt)
+# sound_die = pygame.mixer.Sound('flappy_bird/assets/audio/die' + soundExt)
 #
 # # 取game over文本
-# text_game_over = pygame.image.load('../flappy_bird/flappybird/text_game_over.png').convert_alpha()
+# text_game_over = pygame.image.load('flappy_bird/flappybird/text_game_over.png').convert_alpha()
 
 def printThreshold(thr):
     print("! Changed threshold to " + str(thr))
@@ -118,7 +118,7 @@ def calculateFingers(res, drawing):  # 返回-> 是否检测到手指判断 , cn
             return True, cnt
     return False, 0
 
-def showScore(score):
+def showScore(score, number, SCREEN):
     # 拆分数字
     scoreDigits = [int(x) for x in list(str(score))]
     # 计算数字总宽度
@@ -135,6 +135,51 @@ def showScore(score):
 
 def main(cap):
     global isBgCaptured
+
+    pygame.init()
+    pygame.display.set_caption("Flappy Big Ice")
+    # 设置游戏对话框尺寸
+    SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    # 取背景图，抠掉边缘转换
+    background_day = pygame.image.load('flappy_bird/flappybird/banana2.png').convert_alpha()
+    bird = [pygame.image.load('flappy_bird/assets/sprites/redbird-upflap.png').convert_alpha(),
+            pygame.image.load('flappy_bird/assets/sprites/redbird-midflap.png').convert_alpha(),
+            pygame.image.load('flappy_bird/assets/sprites/redbird-downflap.png').convert_alpha()]
+
+    number = [pygame.image.load('flappy_bird/assets/sprites/0.png').convert_alpha(),
+              pygame.image.load('flappy_bird/assets/sprites/1.png').convert_alpha(),
+              pygame.image.load('flappy_bird/assets/sprites/2.png').convert_alpha(),
+              pygame.image.load('flappy_bird/assets/sprites/3.png').convert_alpha(),
+              pygame.image.load('flappy_bird/assets/sprites/4.png').convert_alpha(),
+              pygame.image.load('flappy_bird/assets/sprites/5.png').convert_alpha(),
+              pygame.image.load('flappy_bird/assets/sprites/6.png').convert_alpha(),
+
+              pygame.image.load('flappy_bird/assets/sprites/7.png').convert_alpha(),
+              pygame.image.load('flappy_bird/assets/sprites/8.png').convert_alpha(),
+              pygame.image.load('flappy_bird/assets/sprites/9.png').convert_alpha()]
+    # 地面图
+    ground = pygame.image.load('flappy_bird/assets/sprites/base.png').convert_alpha()
+    # 开场动画
+    message = pygame.image.load('flappy_bird/flappybird/text_ready.png').convert_alpha()
+    # 取柱子
+    pipe_down = pygame.image.load('flappy_bird/flappybird/pipe_up.png').convert_alpha()
+    pipe_up = pygame.image.load('flappy_bird/flappybird/pipe_down.png').convert_alpha()
+    # 取logo
+    logo = pygame.image.load('flappy_bird/flappybird/bird0_0.png').convert_alpha()
+    # 取声音
+    if "win" in sys.platform:
+        soundExt = '.wav'
+    else:
+        soundExt = 'ogg'
+
+    sound_wing = pygame.mixer.Sound('flappy_bird/assets/audio/wing' + soundExt)
+    sound_hit = pygame.mixer.Sound('flappy_bird/assets/audio/hit' + soundExt)
+    sound_point = pygame.mixer.Sound('flappy_bird/assets/audio/point' + soundExt)
+    sound_die = pygame.mixer.Sound('flappy_bird/assets/audio/die' + soundExt)
+
+    # 取game over文本
+    text_game_over = pygame.image.load('flappy_bird/flappybird/text_game_over.png').convert_alpha()
+
     # 创建帧率实例
     FPS = pygame.time.Clock()
     # 迭代器 小鸟翅膀 0-1-2-1-0循环
@@ -191,7 +236,7 @@ def main(cap):
             cap.release()
             cv2.destroyAllWindows()
             pygame.quit()
-            sys.exit()
+            # sys.exit()
             break
         elif k == ord('r'): # 按r重置游戏
             game_state = ANIMATION
@@ -347,7 +392,7 @@ def main(cap):
                         abs(bird_x_position - (pipe2_x_position + pipe_down.get_width())) < 2:
                     sound_point.play()
                     score += 1
-                showScore(score)
+                showScore(score, number, SCREEN)
 
             if game_state == GAMEOVER:
                 # 调整头的方向
@@ -360,13 +405,13 @@ def main(cap):
                 bird_actual_position += 10
                 bird_actual_position = min(ground_position, bird_actual_position)
                 SCREEN.blit(bird_head, (bird_x_position, bird_actual_position))
-                showScore(score)
+                showScore(score, number, SCREEN)
                 # 小鸟落地后游戏才能重新开始
                 if bird_actual_position == ground_position:
                     SCREEN.blit(text_game_over, (SCREEN_WIDTH / 2 - text_game_over.get_width() / 2, 0.4 * SCREEN_HEIGHT))
 
             # 设置文中logo
-            SCREEN.blit(pygame.image.load('../flappy_bird/flappybird/title.png').convert_alpha(),
+            SCREEN.blit(pygame.image.load('flappy_bird/flappybird/title.png').convert_alpha(),
                         (SCREEN_WIDTH / 2 - 80 , SCREEN_HEIGHT - 70))
         # 获取鼠标按键状态
         for event in pygame.event.get():
@@ -380,58 +425,14 @@ def main(cap):
         # 设置帧率22帧
         FPS.tick(22)
 def body():
-    pygame.init()
-    pygame.display.set_caption("Flappy Big Ice")
-    # 设置游戏对话框尺寸
-    SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    # 取背景图，抠掉边缘转换
-    background_day = pygame.image.load('../flappy_bird/flappybird/banana2.png').convert_alpha()
-    bird = [pygame.image.load('../flappy_bird/assets/sprites/redbird-upflap.png').convert_alpha(),
-            pygame.image.load('../flappy_bird/assets/sprites/redbird-midflap.png').convert_alpha(),
-            pygame.image.load('../flappy_bird/assets/sprites/redbird-downflap.png').convert_alpha()]
-
-    number = [pygame.image.load('../flappy_bird/assets/sprites/0.png').convert_alpha(),
-              pygame.image.load('../flappy_bird/assets/sprites/1.png').convert_alpha(),
-              pygame.image.load('../flappy_bird/assets/sprites/2.png').convert_alpha(),
-              pygame.image.load('../flappy_bird/assets/sprites/3.png').convert_alpha(),
-              pygame.image.load('../flappy_bird/assets/sprites/4.png').convert_alpha(),
-              pygame.image.load('../flappy_bird/assets/sprites/5.png').convert_alpha(),
-              pygame.image.load('../flappy_bird/assets/sprites/6.png').convert_alpha(),
-
-              pygame.image.load('../flappy_bird/assets/sprites/7.png').convert_alpha(),
-              pygame.image.load('../flappy_bird/assets/sprites/8.png').convert_alpha(),
-              pygame.image.load('../flappy_bird/assets/sprites/9.png').convert_alpha()]
-    # 地面图
-    ground = pygame.image.load('../flappy_bird/assets/sprites/base.png').convert_alpha()
-    # 开场动画
-    message = pygame.image.load('../flappy_bird/flappybird/text_ready.png').convert_alpha()
-    # 取柱子
-    pipe_down = pygame.image.load('../flappy_bird/flappybird/pipe_up.png').convert_alpha()
-    pipe_up = pygame.image.load('../flappy_bird/flappybird/pipe_down.png').convert_alpha()
-    # 取logo
-    logo = pygame.image.load('../flappy_bird/flappybird/bird0_0.png').convert_alpha()
-    # 取声音
-    if "win" in sys.platform:
-        soundExt = '.wav'
-    else:
-        soundExt = 'ogg'
-
-    sound_wing = pygame.mixer.Sound('../flappy_bird/assets/audio/wing' + soundExt)
-    sound_hit = pygame.mixer.Sound('../flappy_bird/assets/audio/hit' + soundExt)
-    sound_point = pygame.mixer.Sound('../flappy_bird/assets/audio/point' + soundExt)
-    sound_die = pygame.mixer.Sound('../flappy_bird/assets/audio/die' + soundExt)
-
-    # 取game over文本
-    text_game_over = pygame.image.load('../flappy_bird/flappybird/text_game_over.png').convert_alpha()
-
     cap = cv2.VideoCapture(0)
     cap.set(10, 200)
     #cv2.namedWindow('TrackBar')
     #cv2.createTrackbar('trh1', 'TrackBar', threshold, 100, printThreshold)
     while cap.isOpened():
         main(cap)
-# if __name__ == "__main__":
-#     body()
+if __name__ == "__main__":
+    body()
 
 
 
