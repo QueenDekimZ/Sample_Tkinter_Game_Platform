@@ -9,6 +9,7 @@ from flappy_bird import gesture_bird
 from Login_window.modules import get_window_position
 from flappy_bird.ball_game_test import ball_game_mouse_event
 from plane_war import plane_moudles
+from plane_war.material import main as main_plane
 sys.setrecursionlimit(1000000)
 
 class GamePlatform(tk.Tk, object):
@@ -84,7 +85,7 @@ class GamePlatform(tk.Tk, object):
             if is_sign_up:
                 self.usr_sign_up()
             else:
-                self.quit()
+                pass
 
 
     # sign up window
@@ -166,6 +167,8 @@ class GameWindow(tk.Tk, object):
         dogb_flappy_btn.place(x=20, y=60)
         dogb_war_btn = tk.Button(self, width=20, text='BogB War', command=self.start_game3)
         dogb_war_btn.place(x=20, y=90)
+        plane_war_btn = tk.Button(self, width=20, text='Plane War', command=self.start_game4)
+        plane_war_btn.place(x=20, y=120)
 
         log_out_btn = tk.Button(self, width=10, text='退出登录', command=self.log_out)
         log_out_btn.place(x=60, y=460)
@@ -187,6 +190,13 @@ class GameWindow(tk.Tk, object):
         self.destroy()
         GAME3 = plane_moudles.StartGui(self.USER)
         GameWindow(self.USER)
+
+    # game body 4
+    def start_game4(self):
+        self.destroy()
+        main_plane.run(self.USER)
+        GameWindow(self.USER)
+
     # log out
     def log_out(self):
         self.destroy()

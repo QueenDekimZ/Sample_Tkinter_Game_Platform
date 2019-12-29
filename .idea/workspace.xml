@@ -2,32 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c57b2451-09da-44a4-bada-d003a58384c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_048.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_049.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_050.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_051.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_052.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_053.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_054.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_055.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_056.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/font_057.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/DogB_Game_Platform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DogB_Game_Platform.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/Login_window/window_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/Login_window/window_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/ball_game_test/FONT_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/ball_game_test/FONT_game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/ball_game_test/ball_game_mouse_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/ball_game_test/ball_game_mouse_event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/gesture_bird.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/gesture_bird.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/bullet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/enemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/myplane.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/myplane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/record.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/record.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/supply.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/supply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/score.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/score.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_Game_Platform/usrs_info.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_Game_Platform/usrs_info.pickle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,48 +25,51 @@
     <SUITE FILE_PATH="coverage/DogB_Game_Platform$score_test.coverage" NAME="score_test Coverage Results" MODIFIED="1575989027184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform" />
     <SUITE FILE_PATH="coverage/DogB_Game_Platform$plane_moudles.coverage" NAME="plane_moudles Coverage Results" MODIFIED="1575894749332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/plane_war" />
     <SUITE FILE_PATH="coverage/DogB_Game_Platform$fingers_control.coverage" NAME="fingers_control Coverage Results" MODIFIED="1575945567711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird" />
-    <SUITE FILE_PATH="coverage/DogB_Game_Platform$main.coverage" NAME="main Coverage Results" MODIFIED="1575989449716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform" />
+    <SUITE FILE_PATH="coverage/DogB_Game_Platform$main.coverage" NAME="main Coverage Results" MODIFIED="1577614333284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform" />
     <SUITE FILE_PATH="coverage/DogB_Game_Platform$FONT_game.coverage" NAME="FONT_game Coverage Results" MODIFIED="1574864236269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/ball_game_test" />
-    <SUITE FILE_PATH="coverage/DogB_Game_Platform$window_class.coverage" NAME="window_class Coverage Results" MODIFIED="1575966262837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/Login_window" />
+    <SUITE FILE_PATH="coverage/DogB_Game_Platform$window_class.coverage" NAME="window_class Coverage Results" MODIFIED="1577543661094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/Login_window" />
     <SUITE FILE_PATH="coverage/DogB_Game_Platform$gesture_bird.coverage" NAME="gesture_bird Coverage Results" MODIFIED="1575977053304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird" />
-    <SUITE FILE_PATH="coverage/DogB_Game_Platform$plane_class.coverage" NAME="plane_class Coverage Results" MODIFIED="1575882339692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/plane_war" />
-    <SUITE FILE_PATH="coverage/DogB_Game_Platform$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1575631056419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/plane_war" />
+    <SUITE FILE_PATH="coverage/DogB_Game_Platform$plane_class.coverage" NAME="plane_class Coverage Results" MODIFIED="1577542511267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/plane_war" />
+    <SUITE FILE_PATH="coverage/DogB_Game_Platform$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1577541760155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material" />
     <SUITE FILE_PATH="coverage/DogB_Game_Platform$1_Label___Button.coverage" NAME="1_Label_&amp;_Button Coverage Results" MODIFIED="1574850451240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tkinter_note" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1909008839">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="png" value="42" />
-          <entry key="py" value="35" />
+          <entry key="py" value="46" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="42" />
-          <entry key="Python" value="35" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="12303" />
+          <entry key="py" value="14295" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="12303" />
+          <entry key="Python" value="14295" />
         </counts>
       </usages-collector>
     </session>
@@ -88,81 +77,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/Login_window/window_class.py">
+        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
+            <state relative-caret-position="-2022">
+              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1575986596789" expanded="true" signature="6201:6285" ph="..." />
-                <marker date="1575986596789" expanded="true" signature="6252:6285" ph="..." />
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1577605658942" expanded="true" signature="2732:3881" ph="..." />
+                <marker date="1577605658942" expanded="true" signature="3206:3215" ph="..." />
+                <marker date="1577605658942" expanded="true" signature="4458:4761" ph="..." />
+                <marker date="1577605658942" expanded="true" signature="4785:17620" ph="..." />
+                <marker date="1577605658942" expanded="true" signature="8330:8447" ph="..." />
+                <marker date="1577605658942" expanded="true" signature="8672:8729" ph="..." />
+                <marker date="1577605658942" expanded="true" signature="9142:9147" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/gesture_bird.py">
+        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/Login_window/modules.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="105" column="46" lean-forward="true" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
+            <state relative-caret-position="130">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="457" column="40" lean-forward="true" selection-start-line="457" selection-start-column="40" selection-end-line="457" selection-end-column="40" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/score_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/fingers_control.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_moudles.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="415" column="56" selection-start-line="415" selection-start-column="56" selection-end-line="415" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1575989446920" expanded="true" signature="15985:15994" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_class.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1575817994029" expanded="true" signature="2651:3790" ph="..." />
-                <marker date="1575817994029" expanded="true" signature="3115:3124" ph="..." />
-                <marker date="1575817994029" expanded="true" signature="4357:4650" ph="..." />
-                <marker date="1575817994029" expanded="true" signature="4674:14141" ph="..." />
-                <marker date="1575817994029" expanded="true" signature="6306:6423" ph="..." />
-                <marker date="1575817994029" expanded="true" signature="6648:6705" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
@@ -172,22 +126,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/ball_game_test/ball_game_mouse_event.py">
+        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/enemy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+            <state relative-caret-position="297">
+              <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
               <folding>
-                <element signature="e#87#97#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/utils.py">
+        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/supply.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="260">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding>
+                <element signature="e#79#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/bullet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="13" column="56" lean-forward="true" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/myplane.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -203,16 +178,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rect</find>
-      <find>../</find>
-      <find>showSc</find>
-      <find>K_DOWN</find>
-      <find>speed</find>
       <find>CREATE_ENEM</find>
       <find>showScore</find>
       <find>assets/sprites</find>
       <find>material</find>
       <find>game_window</find>
+      <find>bg</find>
+      <find>images</find>
+      <find>pause</find>
+      <find>get_rect</find>
+      <find>DOWN</find>
+      <find>MOUSEBUTTONDOWN</find>
+      <find>me</find>
+      <find>win_pos</find>
+      <find>gameover</find>
+      <find>score_font</find>
+      <find>Background</find>
+      <find>__create</find>
+      <find>index</find>
+      <find>set</find>
+      <find>set_timer</find>
+      <find>SUPPLY</find>
+      <find>destroy</find>
+      <find>switch</find>
+      <find>image2</find>
+      <find>hit</find>
+      <find>destroy_in</find>
+      <find>active</find>
+      <find>appear</find>
+      <find>image1</find>
+      <find>image_hit</find>
     </findStrings>
     <replaceStrings>
       <replace>material/images</replace>
@@ -229,11 +224,16 @@
         <option value="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/ball_game_test/ball_game_mouse_event.py" />
         <option value="$PROJECT_DIR$/Sample_Game_Platform/main.py" />
         <option value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/main.py" />
-        <option value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_class.py" />
         <option value="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/gesture_bird.py" />
-        <option value="$PROJECT_DIR$/Sample_Game_Platform/Login_window/window_class.py" />
         <option value="$PROJECT_DIR$/Sample_Game_Platform/score_test.py" />
         <option value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_moudles.py" />
+        <option value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/bullet.py" />
+        <option value="$PROJECT_DIR$/Sample_Game_Platform/Login_window/window_class.py" />
+        <option value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_class.py" />
+        <option value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/supply.py" />
+        <option value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/myplane.py" />
+        <option value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/main.py" />
+        <option value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/enemy.py" />
       </list>
     </option>
   </component>
@@ -285,13 +285,13 @@
               <item name="DogB_Game_Platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="DogB_Game_Platform" type="462c0819:PsiDirectoryNode" />
               <item name="Sample_Game_Platform" type="462c0819:PsiDirectoryNode" />
-              <item name="flappy_bird" type="462c0819:PsiDirectoryNode" />
+              <item name="Login_window" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DogB_Game_Platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="DogB_Game_Platform" type="462c0819:PsiDirectoryNode" />
               <item name="Sample_Game_Platform" type="462c0819:PsiDirectoryNode" />
-              <item name="Login_window" type="462c0819:PsiDirectoryNode" />
+              <item name="plane_war" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,7 +325,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="fingers_control" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DogB_Game_Platform" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -333,34 +333,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/fingers_control.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="gesture_bird" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DogB_Game_Platform" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/gesture_bird.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -383,6 +361,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample_Game_Platform/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plane_class" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DogB_Game_Platform" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sample_Game_Platform/plane_war" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_class.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -437,18 +437,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.fingers_control" />
-      <item itemvalue="Python.gesture_bird" />
-      <item itemvalue="Python.window_class" />
       <item itemvalue="Python.score_test" />
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.plane_class" />
+      <item itemvalue="Python.window_class" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.score_test" />
-        <item itemvalue="Python.gesture_bird" />
         <item itemvalue="Python.window_class" />
-        <item itemvalue="Python.fingers_control" />
+        <item itemvalue="Python.plane_class" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.score_test" />
       </list>
     </recent_temporary>
   </component>
@@ -484,7 +484,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -521,13 +521,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="1.1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tkinter_note/3_Listbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tkinter_note/1_Label_&amp;_Button.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -548,13 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="171" column="33" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -587,16 +573,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/flappybird/font_049.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/assets/sprites/2.png">
       <provider selected="true" editor-type-id="images" />
@@ -654,67 +630,26 @@
         <state relative-caret-position="-234" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/Login_window/modules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/images/again.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/ball_game_test/ball_game_mouse_event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding>
-            <element signature="e#87#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1575817994029" expanded="true" signature="2651:3790" ph="..." />
-            <marker date="1575817994029" expanded="true" signature="3115:3124" ph="..." />
-            <marker date="1575817994029" expanded="true" signature="4357:4650" ph="..." />
-            <marker date="1575817994029" expanded="true" signature="4674:14141" ph="..." />
-            <marker date="1575817994029" expanded="true" signature="6306:6423" ph="..." />
-            <marker date="1575817994029" expanded="true" signature="6648:6705" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/gesture_bird.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="105" column="46" lean-forward="true" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
+        <state relative-caret-position="2496">
+          <caret line="105" column="46" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/Login_window/window_class.py">
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_moudles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
+        <state relative-caret-position="10660">
+          <caret line="415" column="56" selection-start-line="415" selection-start-column="56" selection-end-line="415" selection-end-column="56" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1575986596789" expanded="true" signature="6201:6285" ph="..." />
-            <marker date="1575986596789" expanded="true" signature="6252:6285" ph="..." />
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1575989446920" expanded="true" signature="15985:15994" ph="..." />
           </folding>
         </state>
       </provider>
@@ -722,14 +657,123 @@
     <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/fingers_control.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/score_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/flappy_bird/ball_game_test/ball_game_mouse_event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#87#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/Login_window/window_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="190" column="49" lean-forward="true" selection-start-line="190" selection-start-column="49" selection-end-line="190" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1577594494247" expanded="true" signature="8091:8184" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2022">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1577605658942" expanded="true" signature="2732:3881" ph="..." />
+            <marker date="1577605658942" expanded="true" signature="3206:3215" ph="..." />
+            <marker date="1577605658942" expanded="true" signature="4458:4761" ph="..." />
+            <marker date="1577605658942" expanded="true" signature="4785:17620" ph="..." />
+            <marker date="1577605658942" expanded="true" signature="8330:8447" ph="..." />
+            <marker date="1577605658942" expanded="true" signature="8672:8729" ph="..." />
+            <marker date="1577605658942" expanded="true" signature="9142:9147" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/record.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/supply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#79#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/bullet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="56" lean-forward="true" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/myplane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/Login_window/modules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/enemy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/material/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="457" column="40" lean-forward="true" selection-start-line="457" selection-start-column="40" selection-end-line="457" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -737,17 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Game_Platform/plane_war/plane_moudles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="415" column="56" selection-start-line="415" selection-start-column="56" selection-end-line="415" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1575989446920" expanded="true" signature="15985:15994" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>

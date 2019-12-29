@@ -1,11 +1,12 @@
 import pygame
 
+MAINFILE_PATH = "plane_war/material/"
+
 class Bullet1(pygame.sprite.Sprite):
-    """docstring for Bullet1"""
     def __init__(self, position):
         super(Bullet1, self).__init__()
 
-        self.image = pygame.image.load("images/bullet1.png").convert_alpha()
+        self.image = pygame.image.load(MAINFILE_PATH+"images/My_zidan.png").convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.left, self.rect.top = position
         self.speed = 12
@@ -22,11 +23,14 @@ class Bullet1(pygame.sprite.Sprite):
         self.active = True
 
 class Bullet2(pygame.sprite.Sprite):
-    """docstring for Bullet2"""
     def __init__(self, position):
         super(Bullet2, self).__init__()
 
-        self.image = pygame.image.load("images/bullet2.png").convert_alpha()
+        self.image = pygame.image.load(MAINFILE_PATH+"images/My_zidan.png").convert_alpha()
+        self.width, self.height = self.image.get_size()
+        self.width, self.height = self.width * 4, self.height * 4
+        self.image = pygame.transform.smoothscale(self.image, (self.width, self.height))
+
         self.rect = self.image.get_rect()
         self.rect.left, self.rect.top = position
         self.speed = 14

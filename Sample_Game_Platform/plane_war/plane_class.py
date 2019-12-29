@@ -2,7 +2,7 @@ import random
 import pickle
 import pygame
 from itertools import cycle
-
+from Login_window.modules import get_window_position
 
 SCREEN_SIZE = (400, 700)
 ENEMY_SPEED = [[1, 3], [1, 3], [1, 2], [0,3], [-1, 4], [-1, 2]]
@@ -10,6 +10,7 @@ ITER_ENEMY_SPEED = cycle(ENEMY_SPEED)
 CREATE_ENEMY_EVENT = pygame.USEREVENT
 CHANGE_SPEED = pygame.USEREVENT + 1
 PLANE_ME_FIRE = pygame.USEREVENT+ 2
+SUPPLY_TIME = pygame.USEREVENT + 3
 FLAG = 0
 FIRE_COOL = 0
 
@@ -22,7 +23,7 @@ class Plane(pygame.sprite.Sprite):
         # 加载图像
         self.image = pygame.image.load(image_name).convert_alpha()
         self.width, self.height = self.image.get_size()
-        if image_name == "../dog2.png":
+        if image_name == "dog2.png":
             self.width, self.height = self.width // 4, self.height // 4
             self.image = pygame.transform.smoothscale(self.image, (self.width, self.height))
 
@@ -42,7 +43,7 @@ class Plane(pygame.sprite.Sprite):
 
 class PlaneEnemy(Plane):
     def __init__(self, SCREEN=None):
-        super(PlaneEnemy, self).__init__("../dog2.png", SCREEN=SCREEN)
+        super(PlaneEnemy, self).__init__("dog2.png", SCREEN=SCREEN)
         # self.speed[1] = random.randint(1,3)
         # self.speed[0] = random.randint(-2, 2)
         self.rect.bottom = self.SCREEN_RECT.top
@@ -72,7 +73,7 @@ class PlaneEnemy(Plane):
 
 class PlaneMe(Plane):
     def __init__(self, SCREEN=None, bullets_group=None):
-        super(PlaneMe, self).__init__("material/images/me1.png", SCREEN=SCREEN)
+        super(PlaneMe, self).__init__("plane_war/material/images/me1.png", SCREEN=SCREEN)
         self.speed = [0, 0]
         self.bullets_group = bullets_group
         # 设置初始位置
@@ -103,7 +104,7 @@ class PlaneMe(Plane):
         self.bullets_group.add(self.bullet)
 class Background(Plane):
     def __init__(self, SCREEN=None, is_alter=False):
-        super(Background, self).__init__("material/images/background.png", SCREEN=SCREEN)
+        super(Background, self).__init__("plane_war/material/images/background.png", SCREEN=SCREEN)
 
         # 判断是否是交替图像，如果是，需要设置初始位置
         if is_alter:
@@ -119,7 +120,7 @@ class Background(Plane):
 
 class Bullet(Plane):
     def __init__(self, SCREEN=None):
-        super(Bullet, self).__init__("material/images/bullet1.png", SCREEN=SCREEN)
+        super(Bullet, self).__init__("plane_war/material/images/bullet1.png", SCREEN=SCREEN)
         self.speed = [0, -4]
     def update(self, *args):
         super().update()
@@ -137,16 +138,54 @@ class PlaneGame(object):
         # 计分
         self.count = 0
         # 加载分数图
-        self.number = [pygame.image.load('material/images/0.png').convert_alpha(),
-                       pygame.image.load('material/images/1.png').convert_alpha(),
-                       pygame.image.load('material/images/2.png').convert_alpha(),
-                       pygame.image.load('material/images/3.png').convert_alpha(),
-                       pygame.image.load('material/images/4.png').convert_alpha(),
-                       pygame.image.load('material/images/5.png').convert_alpha(),
-                       pygame.image.load('material/images/6.png').convert_alpha(),
-                       pygame.image.load('material/images/7.png').convert_alpha(),
-                       pygame.image.load('material/images/8.png').convert_alpha(),
-                       pygame.image.load('material/images/9.png').convert_alpha()]
+        self.number = [pygame.image.load('plane_war/material/images/0.png').convert_alpha(),
+                       pygame.image.load('plane_war/material/images/1.png').convert_alpha(),
+                       pygame.image.load('plane_war/material/images/2.png').convert_alpha(),
+                       pygame.image.load('plane_war/material/images/3.png').convert_alpha(),
+                       pygame.image.load('plane_war/material/images/4.png').convert_alpha(),
+                       pygame.image.load('plane_war/material/images/5.png').convert_alpha(),
+                       pygame.image.load('plane_war/material/images/6.png').convert_alpha(),
+                       pygame.image.load('plane_war/material/images/7.png').convert_alpha(),
+                       pygame.image.load('plane_war/material/images/8.png').convert_alpha(),
+                       pygame.image.load('plane_war/material/images/9.png').convert_alpha()]
+        # # 标志是否暂停游戏
+        # self.paused = False
+        # self.paused_nor_image = pygame.image.load(
+        #     "plane_war/material/images/pause_nor.png").convert_alpha()
+        # self.paused_pressed_image = pygame.image.load(
+        #     "plane_war/material/images/pause_pressed.png").convert_alpha()
+        # self.resume_nor_image = pygame.image.load(
+        #     'plane_war/material/images/resume_nor.png').convert_alpha()
+        # self.resume_pressed_image = pygame.image.load(
+        #     'plane_war/material/images/resume_pressed.png').convert_alpha()
+        # self.paused_rect = self.paused_nor_image.get_rect()
+        # self.paused_rect.left, self.paused_rect.top = self.screen.get_rect().width - self.paused_rect.width - 10, 10
+        # self.paused_image = self.paused_nor_image
+        #
+        # # 设置难度
+        # self.level = 1
+        # # 全屏炸弹
+        # self.bomb_image = pygame.image.load('plane_war/material/images/bomb.png').convert_alpha()
+        # self.bomb_rect = self.bomb_image.get_rect()
+        # # self.bomb_font = pygame.font.Font("plane_war/material/font/font.ttf", 48)
+        # self.bomb_num = 3
+        # # 每30秒发放一个补给包
+        # self.bullet_supply = supply.Bullet_Supply(SCREEN_SIZE)
+        # self.bomb_supply = supply.Bomb_Supply(SCREEN_SIZE)
+        # self.pygame.time.set_timer(SUPPLY_TIME, 30 * 1000)
+        # 超级子弹定时器
+        # self.DOUBLE_BULLTET_TIME = USEREVENT + 1
+        # # 解除我方重生无敌定时器
+        # self.INVINCIBLE_TIME = USEREVENT + 2
+        # # 标志是否使用超级子弹
+        # self.is_double_bullet = False
+        # 生命数量
+        # self.life_image = pygame.image.load('plane_war/material/images/life.png').convert_alpha()
+        # self.life_rect = self.life_image.get_rect()
+        # self.life_num = 3
+        # # 用于切换我方飞机图片
+        # self.switch_plane = True
+
         # 创建游戏时钟
         self.clock = pygame.time.Clock()
         # 创建敌机精灵和精灵组
@@ -186,6 +225,8 @@ class PlaneGame(object):
             self.__update_sprities()
             # 显示分数
             self.showScore()
+            # 绘制暂停按钮
+            # self.screen.blit(self.paused_image, self.paused_rect)
             # 更新显示
             pygame.display.update()
 
@@ -205,6 +246,29 @@ class PlaneGame(object):
                 if event.key == pygame.K_ESCAPE:  # 按ESC退出
                     pygame.quit()
                     return
+            # elif event.type == pygame.MOUSEBUTTONDOWN:
+            #     if event.button == 1 and self.paused_rect.collidepoint(event.pos):
+            #         self.paused = not paused
+            #         if self.paused:
+            #             pygame.time.set_timer(self.SUPPLY_TIME, 0)
+            #             pygame.mixer.music.pause()
+            #             pygame.mixer.pause()
+            #         else:
+            #             pygame.time.set_timer(self.SUPPLY_TIME, 30 * 1000)
+            #             pygame.mixer.music.unpause()
+            #             pygame.mixer.unpause()
+            #
+            # elif event.type == pygame.MOUSEMOTION:
+            #     if self.paused_rect.collidepoint(event.pos):
+            #         if self.paused:
+            #             self.paused_image = self.resume_pressed_image
+            #         else:
+            #             self.paused_image = self.paused_pressed_image
+            #     else:
+            #         if self.paused:
+            #             self.paused_image = self.resume_nor_image
+            #         else:
+            #             self.paused_image = self.paused_nor_image
                 # if event.key == pygame.K_a:
                 #     FIRE_COOL += 1
                 #     if FIRE_COOL % 100 == 0:
@@ -226,13 +290,13 @@ class PlaneGame(object):
             # else:
             #      self.me.speed = [0, 0]
         if KEY_PRESSED[pygame.K_UP]:
-            self.me.speed = [0, -2]
+            self.me.speed += [0, -10]
         elif KEY_PRESSED[pygame.K_DOWN]:
-            self.me.speed = [0, 2]
+            self.me.speed += [0, 10]
         elif KEY_PRESSED[pygame.K_LEFT]:
-            self.me.speed = [-2, 0]
+            self.me.speed += [-10, 0]
         elif KEY_PRESSED[pygame.K_RIGHT]:
-            self.me.speed = [2, 0]
+            self.me.speed += [10, 0]
         elif KEY_PRESSED[pygame.K_a]:
             FIRE_COOL+= 1
             if FIRE_COOL % 3 == 0:
@@ -328,6 +392,8 @@ class StartGui():
         self.USER = USER
         # 创建开始窗口
         self.screen = pygame.display.set_mode(SCREEN_SIZE)
+        self.win_pos = get_window_position(SCREEN_SIZE[0], SCREEN_SIZE[1])
+        self.screen.geometry(f'{self.win_width}x{self.win_height}+{self.win_pos[0]}+{self.win_pos[1]}')
         self.screen.fill([255,255,255])  # 用白色填充窗口
         KEY_PRESSED = pygame.key.get_pressed()
         self.button_start = pygame.image.load("material/images/gamestart.png").convert_alpha()
@@ -361,10 +427,10 @@ class StartGui():
                         return
 
         GAME = PlaneGame()
-if __name__ == '__main__':
-    USER = "Wang"
-    USER2 = "Zhang"
-    StartGui(USER)
+# if __name__ == '__main__':
+#     USER = "Wang"
+#     USER2 = "Zhang"
+#     StartGui(USER)
 
 
 # hero_rect = pygame.Rect(100, 500, 120, 126)
