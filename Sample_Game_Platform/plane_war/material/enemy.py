@@ -64,11 +64,11 @@ class MidEnemy(pygame.sprite.Sprite):
             pygame.image.load(MAINFILE_PATH + 'images/blow2_8.png').convert_alpha(),
             pygame.image.load(MAINFILE_PATH + 'images/blow2_9.png').convert_alpha(),
         ])
-        self.image_hit = pygame.image.load(MAINFILE_PATH+'images/enemy2_hit.png').convert_alpha()
+        self.image_hit = pygame.image.load(MAINFILE_PATH+'images/blow2_1.png').convert_alpha()
         self.rect = self.image.get_rect()
         self.width, self.height = bg_size[0], bg_size[1]
         self.active = True
-        self.speed = 1.5
+        self.speed = 1
         self.mask = pygame.mask.from_surface(self.image)
         self.reset()
         self.energy = MidEnemy.energy
@@ -93,8 +93,7 @@ class BigEnemy(pygame.sprite.Sprite):
 
     def __init__(self, bg_size):
         super(BigEnemy, self).__init__()
-        print("大飞机出场")
-        self.image = pygame.image.load(MAINFILE_PATH+'images/blow3.png').convert_alpha()
+        self.image = pygame.image.load(MAINFILE_PATH+'images/My_plane.png').convert_alpha()
         self.destroy_images = []
         self.destroy_images.extend([
             pygame.image.load(MAINFILE_PATH+'images/blow3_1.png').convert_alpha(),
@@ -107,7 +106,7 @@ class BigEnemy(pygame.sprite.Sprite):
             pygame.image.load(MAINFILE_PATH + 'images/blow3_8.png').convert_alpha(),
             pygame.image.load(MAINFILE_PATH + 'images/blow3_9.png').convert_alpha(),
             ])
-        self.image_hit = pygame.image.load(MAINFILE_PATH+'images/blow3_9.png').convert_alpha()
+        self.image_hit = pygame.image.load(MAINFILE_PATH+'images/blow3_1.png').convert_alpha()
         self.rect = self.image.get_rect()
         self.width, self.height = bg_size[0], bg_size[1]
         self.active = True
