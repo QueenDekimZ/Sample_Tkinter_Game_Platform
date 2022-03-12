@@ -29,7 +29,7 @@ opencv-python==4.0.0.21
 paddlepaddle==1.2.1
 pandas==0.24.1
 pefile==2018.8.8
-Pillow==5.4.1
+Pillow==9.0.1
 protobuf==3.9.1
 pyface==6.0.0
 Pygments==2.2.0
