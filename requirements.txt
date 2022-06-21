@@ -24,7 +24,7 @@ matplotlib==2.2.3
 mayavi==4.5.0+vtk71
 mxnet==1.5.0
 nltk==3.4
-numpy==1.17.2
+numpy==1.22.0
 opencv-python==4.0.0.21
 paddlepaddle==1.2.1
 pandas==0.24.1
