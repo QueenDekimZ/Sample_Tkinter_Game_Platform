@@ -56,6 +56,6 @@ traitsui==6.0.0
 urllib3==1.24.1
 virtualenv==16.7.7
 virtualenvwrapper-win==1.2.5
-VTK==7.1.1
+VTK==9.0.1
 Werkzeug==0.15.6
 wrapt==1.11.1
