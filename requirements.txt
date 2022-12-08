@@ -3,7 +3,7 @@ altgraph==0.16.1
 apptools==4.4.0
 astor==0.8.0
 beautifulsoup4==4.6.3
-certifi==2018.10.15
+certifi==2022.12.7
 chardet==3.0.4
 configobj==5.0.6
 cycler==0.10.0
